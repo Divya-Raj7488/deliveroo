@@ -8,7 +8,7 @@ import {
   ChevronDownIcon,
   UserIcon,
 } from "react-native-heroicons/outline";
-import Category from "../components/Categories";
+import Category from "../components/Category";
 
 const HomeScreen = () => {
   const navigation = useNavigation();
@@ -42,24 +42,20 @@ const HomeScreen = () => {
       </View>
 
       {/* Seachbar */}
-      <View className="flex-row h-10 items-center mt-4 mb-0.5">
+      <View className="flex-row h-12 items-center mt-2 mb-1">
         <View className="flex-1 mx-3 bg-gray-100">
           {/* <SearchIcon/> */}
-          <TextInput placeholder="Search for Restaurents" className="h-12 " />
+          <TextInput
+            placeholder="Search for Restaurents"
+            className="h-10 mx-2"
+          />
         </View>
         <AdjustmentsVerticalIcon size={30} color="#00CCBB" />
       </View>
-
       {/* body */}
-      <ScrollView
-      
-      // className="bg-gray-100"
-      // contentContainerStyle={{
-      //   paddingBottom: 100,
-      // }}
-      >
+      <View>
         <Category />
-      </ScrollView>
+      </View>
     </View>
   );
 };
