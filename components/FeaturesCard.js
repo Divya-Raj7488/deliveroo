@@ -24,7 +24,34 @@ const FeaturesCard = ({heading,imgUrl,description}) => {
         Rating='4.5'
         genre='Indian'
         location='Madhuban'
+        offer='Offer'
         />
+        <RestauroCard 
+        imgUrl='https://tse3.mm.bing.net/th?id=OIP.pA3QV9le3tWkxzb9gqli0gHaFj&pid=Api&P=0'
+        title='Divya'
+        Rating='4.5'
+        genre='Indian'
+        location='Madhuban'
+        offer='Offer'
+        />
+        
+        <RestauroCard 
+        imgUrl='https://tse2.mm.bing.net/th?id=OIP.LOnoMVGZVGoUWYM2XXV5bgHaDV&pid=Api&P=0'
+        title='Divya'
+        Rating='4.5'
+        genre='Indian'
+        location='Madhuban'
+        offer='Offer'
+        />
+        <RestauroCard 
+        imgUrl='https://tse1.mm.bing.net/th?id=OIP.iveqDq16UcuV5vGlcHAYMgHaEK&pid=Api&P=0'
+        title='Divya'
+        Rating='4.5'
+        genre='Indian'
+        location='Madhuban'
+        offer='Offer'
+        />
+
     </ScrollView>
    
     </View>

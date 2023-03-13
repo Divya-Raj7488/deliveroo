@@ -5,7 +5,7 @@ import { MapPinIcon } from "react-native-heroicons/outline";
 
 const RestauroCard = ({ imgUrl, title, Rating, offer, location, genre }) => {
   return (
-    <View>
+    <View className='px-1 py-1'>
       <Image
         source={{
           uri: imgUrl,
@@ -25,7 +25,7 @@ const RestauroCard = ({ imgUrl, title, Rating, offer, location, genre }) => {
             <Text className='text-green-500 text-sm font-bold '>{Rating} </Text>. {genre}
           </Text>
         </View>
-        <Text>{offer}</Text>
+        <Text className='font-bold text-green-700 px-1 py-1'>{offer}</Text>
       </View>
       <View className="flex-row items-center">
       <MapPinIcon color='green' opacity={0.5} size={22} />
