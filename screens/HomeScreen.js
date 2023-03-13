@@ -9,6 +9,7 @@ import {
   UserIcon,
 } from "react-native-heroicons/outline";
 import Category from "../components/Category";
+import FeaturesCard from "../components/FeaturesCard";
 
 const HomeScreen = () => {
   const navigation = useNavigation();
@@ -19,7 +20,7 @@ const HomeScreen = () => {
   });
 
   return (
-    <View className="bg-white">
+    <View className="bg-white flex-1">
       {/* NavigationBar */}
       <View className="h-24 w-screen items-end flex-row">
         <View>
@@ -56,6 +57,29 @@ const HomeScreen = () => {
       <View>
         <Category />
       </View>
+      <ScrollView showsVerticalScrollIndicator={false} className="my-4">
+        {/* Offers Near you */}
+        <View>
+          <FeaturesCard
+            heading="Offers Near you"
+            description="Lorem ipsum dolor sit Lorem ipsum dolor sit amet"
+          />
+        </View>
+        {/* Features */}
+        <View>
+          <FeaturesCard
+            heading="Features"
+            description="Lorem ipsum dolor sit Lorem ipsum dolor sit amet"
+          />
+        </View>
+        {/* Tasty Discounts */}
+        <View>
+          <FeaturesCard
+            heading="Tasty Discounts"
+            description="Lorem ipsum dolor sit Lorem ipsum dolor sit amet"
+          />
+        </View>
+      </ScrollView>
     </View>
   );
 };
